@@ -10,8 +10,8 @@ get '/secret' do
 end
 
 get '/cat' do
-  # <img style='border-red: 3px dotted' src='http://bit.ly/1eze8aE'>
-  "<div style='border: 3px dashed red'>
-  <img src='http://bit.ly/1eze8aE'>
-  </div>"
+  erb(:index) 
 end
+
+# <img style='border-red: 3px dotted' src='http://bit.ly/1eze8aE'> (border fix)
+# app.rb is a controller file that is linked with index.erb which is the view file
