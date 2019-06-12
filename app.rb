@@ -10,8 +10,10 @@ get '/secret' do
 end
 
 get '/cat' do
-  erb(:index) 
+  @name = ["Amigo", "Oscar", "Viking"].sample
+  erb(:index)
 end
+
 
 # <img style='border-red: 3px dotted' src='http://bit.ly/1eze8aE'> (border fix)
 # app.rb is a controller file that is linked with index.erb which is the view file
