@@ -14,9 +14,13 @@ get '/random-cat' do
   erb(:index)
 end
 
-get '/named-cat' do
+post '/named-cat' do
   p params
   @name = params[:name]
+  erb(:index)
+end
+
+get '/cat-naming' do
   erb(:index)
 end
 # <img style='border-red: 3px dotted' src='http://bit.ly/1eze8aE'> (border fix)
